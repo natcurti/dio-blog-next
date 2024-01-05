@@ -7,7 +7,7 @@ export const getPosts = async () => {
         return data;
     }
 
-    return []
+    return [];
 }
 
 export const getPostBySlug = async (id) => {
