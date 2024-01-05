@@ -15,7 +15,8 @@ export const getPostBySlug = async (id) => {
     const { data } = await api.get(`/posts?id=eq.${id}`)
     if (data) {
         return data[0];
-    }
+    } else {
+        return null;
+    }    
     
-    return null;
 }
